@@ -639,9 +639,12 @@ export default function Home() {
       </main>
 
       <footer>
-        <div className="shell">
-          Everyday Goods Co. Sample HTML storefront for everyday household
-          products.
+        <div className="shell footer-content">
+          <span>
+            Everyday Goods Co. Sample HTML storefront for everyday household
+            products.
+          </span>
+          <address>Sydney, Australia</address>
         </div>
       </footer>
     </>
