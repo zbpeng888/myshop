@@ -764,6 +764,20 @@
       font-size: 0.92rem;
     }
 
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .footer-content address {
+      color: var(--charcoal);
+      font-style: normal;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
     .no-results {
       display: none;
       padding: 36px;
@@ -852,5 +866,10 @@
       .promo-band {
         padding: 20px;
       }
+
+      .footer-content {
+        align-items: flex-start;
+        flex-direction: column;
+      }
     }
-  
+
