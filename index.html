@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sydney Everyday Co. sells household tools, gardening gear, kids toys, and everyday essentials with fast local delivery across Sydney.">
+  <title>Sydney Everyday Co. | Essentials Delivered Across Sydney</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Sydney Everyday Co. home">
+      <span class="brand-mark">SE</span>
+      <span>
+        <strong>Sydney Everyday Co.</strong>
+        <small>Essentials for home, garden, play, and daily life</small>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="#shop">Shop</a>
+      <a href="#delivery">Delivery</a>
+      <a href="#bundles">Bundles</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="cart-pill" type="button" data-cart-toggle aria-label="Open cart">
+      <span>Cart</span>
+      <strong data-cart-count>0</strong>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" role="img" aria-label="Organised home and garden essentials ready for delivery"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Sydney local essentials store</p>
+        <h1 id="hero-title">Everyday tools, products, toys, and personal staples delivered across Sydney.</h1>
+        <p class="hero-copy">Stock the cupboard, tidy the house, refresh the garden, and keep the family sorted with one simple local order.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#shop">Shop essentials</a>
+          <a class="button secondary" href="#bundles">View value bundles</a>
+        </div>
+        <dl class="service-strip" aria-label="Store highlights">
+          <div>
+            <dt>Same-day</dt>
+            <dd>Metro Sydney dispatch before 2pm</dd>
+          </div>
+          <div>
+            <dt>$89+</dt>
+            <dd>Free delivery threshold</dd>
+          </div>
+          <div>
+            <dt>7 days</dt>
+            <dd>Returns on unopened items</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="category-band" aria-label="Popular categories">
+      <a href="#shop" data-category-link="Housekeeping">
+        <span class="category-image housekeeping"></span>
+        <strong>Housekeeping</strong>
+        <small>Cleaning tools and home supplies</small>
+      </a>
+      <a href="#shop" data-category-link="Garden">
+        <span class="category-image garden"></span>
+        <strong>Garden</strong>
+        <small>Landscaping and outdoor tools</small>
+      </a>
+      <a href="#shop" data-category-link="Kids">
+        <span class="category-image kids"></span>
+        <strong>Kids Toys</strong>
+        <small>Play, craft, and learning picks</small>
+      </a>
+      <a href="#shop" data-category-link="Essentials">
+        <span class="category-image essentials"></span>
+        <strong>Men's & Women's</strong>
+        <small>Daily care and practical basics</small>
+      </a>
+    </section>
+
+    <section class="shop-section" id="shop" aria-labelledby="shop-title">
+      <div class="section-heading">
+        <p class="eyebrow">Shop the range</p>
+        <h2 id="shop-title">Useful staples, neatly sorted</h2>
+        <p>Browse reliable everyday products for apartments, family homes, courtyards, school weeks, and weekend jobs.</p>
+      </div>
+
+      <div class="shop-tools" aria-label="Product filters">
+        <label class="search-box">
+          <span>Search products</span>
+          <input type="search" placeholder="Try mop, gloves, toys, razor..." data-search>
+        </label>
+        <div class="filter-buttons" role="group" aria-label="Filter by category">
+          <button class="filter active" type="button" data-filter="All">All</button>
+          <button class="filter" type="button" data-filter="Housekeeping">Housekeeping</button>
+          <button class="filter" type="button" data-filter="Garden">Garden</button>
+          <button class="filter" type="button" data-filter="Kids">Kids Toys</button>
+          <button class="filter" type="button" data-filter="Essentials">Men's & Women's</button>
+        </div>
+      </div>
+
+      <div class="product-grid" data-product-grid aria-live="polite"></div>
+    </section>
+
+    <section class="delivery-section" id="delivery" aria-labelledby="delivery-title">
+      <div>
+        <p class="eyebrow">Sydney service</p>
+        <h2 id="delivery-title">Fast local delivery with practical pickup options.</h2>
+      </div>
+      <div class="delivery-options" role="group" aria-label="Delivery options">
+        <label>
+          <input type="radio" name="delivery" value="Standard Sydney delivery" checked>
+          <span>
+            <strong>Standard Sydney delivery</strong>
+            <small>1-2 business days across metro suburbs</small>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="delivery" value="Same-day courier">
+          <span>
+            <strong>Same-day courier</strong>
+            <small>Available before 2pm for selected postcodes</small>
+          </span>
+        </label>
+        <label>
+          <input type="radio" name="delivery" value="Click and collect">
+          <span>
+            <strong>Click and collect</strong>
+            <small>Pickup window from our inner-west dispatch point</small>
+          </span>
+        </label>
+      </div>
+    </section>
+
+    <section class="bundles-section" id="bundles" aria-labelledby="bundles-title">
+      <div class="section-heading">
+        <p class="eyebrow">Ready-made bundles</p>
+        <h2 id="bundles-title">Quick carts for common jobs</h2>
+      </div>
+      <div class="bundle-grid">
+        <article>
+          <span class="bundle-image move-in"></span>
+          <div>
+            <h3>Apartment Moving-in Kit</h3>
+            <p>Mop, surface spray, laundry basket, cloths, gloves, bin liners, and bathroom basics.</p>
+            <button class="button small" type="button" data-bundle="Apartment Moving-in Kit">Add bundle</button>
+          </div>
+        </article>
+        <article>
+          <span class="bundle-image garden-weekend"></span>
+          <div>
+            <h3>Weekend Garden Reset</h3>
+            <p>Hand trowel, pruning snips, watering wand, gloves, plant ties, and lawn tidy bags.</p>
+            <button class="button small" type="button" data-bundle="Weekend Garden Reset">Add bundle</button>
+          </div>
+        </article>
+        <article>
+          <span class="bundle-image family"></span>
+          <div>
+            <h3>Family Week Sorted</h3>
+            <p>Lunchbox labels, craft pads, bubble mix, wipes, toothbrush packs, and travel tissues.</p>
+            <button class="button small" type="button" data-bundle="Family Week Sorted">Add bundle</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-panel" data-cart-panel aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">Your order</p>
+        <h2>Sydney cart</h2>
+      </div>
+      <button class="icon-button" type="button" data-cart-close aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" data-cart-items>
+      <p class="empty-cart">Your cart is ready when you are.</p>
+    </div>
+    <div class="cart-footer">
+      <div>
+        <span>Selected service</span>
+        <strong data-delivery-summary>Standard Sydney delivery</strong>
+      </div>
+      <div>
+        <span>Estimated total</span>
+        <strong data-cart-total>$0.00</strong>
+      </div>
+      <button class="button primary checkout" type="button">Checkout request</button>
+      <small>Demo storefront: connect your preferred payment or enquiry form when ready.</small>
+    </div>
+  </aside>
+  <div class="scrim" data-scrim></div>
+
+  <footer class="site-footer" id="contact">
+    <div>
+      <strong>Sydney Everyday Co.</strong>
+      <p>Housekeeping tools, gardening gear, kids toys, men's and women's essentials, and practical home supplies.</p>
+    </div>
+    <address>
+      Sydney, NSW Australia<br>
+      orders@sydneyeveryday.example<br>
+      Mon-Sat, 8am-6pm
+    </address>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
